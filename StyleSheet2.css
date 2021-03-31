@@ -1,0 +1,259 @@
+﻿@import url("./font.css");
+
+body {
+    font-family: "Graphik";
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body,
+main > div#content,
+footer,
+header {
+    background-color: #2E3031;
+}
+
+/* HEADER */
+header {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #3B3B3B;
+}
+
+    header > div > ul#menu {
+        list-style: none;
+        margin: 12px;
+    }
+
+        header > div > ul#menu > li {
+            float: left;
+            padding-left: 20px;
+        }
+
+            header > div > ul#menu > li > a {
+                line-height: 24px;
+                font-size: 16px;
+                color: #5BFFFF;
+            }
+
+                header > div > ul#menu > li > a.login {
+                    line-height: 28px;
+                    font-size: 14px;
+                    color: #C2B9AB;
+                }
+
+                    header > div > ul#menu > li > a.login:hover {
+                        color: #5BFFFF;
+                    }
+
+            header > div > ul#menu > li.sep {
+                border-right: 1px solid #3B3B3B;
+                padding-right: 20px;
+            }
+
+
+/* MAIN */
+main > div#video {
+    position: relative;
+    height: 460px;
+    width: 100%;
+    overflow: hidden;
+}
+
+    main > div#video > video {
+        width: 100%;
+    }
+
+    main > div#video > div {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        height: 100%;
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+        main > div#video > div > * {
+            margin: 10px 0;
+        }
+
+        main > div#video > div > div.title {
+            font-weight: 600;
+            color: #fff;
+            font-size: 42px;
+        }
+
+        main > div#video > div > div.subtitle {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        main > div#video > div > div.btn {
+            color: #fff;
+            font-size: 16px;
+            padding: .75em 7em;
+            background: #DF2142;
+            border-radius: 5px;
+            max-width: max-content;
+            text-align: center;
+            margin: 32px auto;
+        }
+
+main > div#content > div#tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 1px solid #3B3B3B;
+    border-bottom: 1px solid #3B3B3B;
+}
+
+    main > div#content > div#tags > div {
+        margin: 20px;
+        color: #C2B897;
+        padding: 5px 10px;
+        border: 1px solid #5B6064;
+        border-radius: 6px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+main > div#content > div.mw {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+main > div#content section {
+    width: 100%;
+    margin: 40px 0;
+}
+
+    main > div#content section > div.fw {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+        main > div#content section > div.fw div#all > a {
+            color: #5BFFE6;
+        }
+
+
+    main > div#content section > * {
+        margin: 5px 0;
+    }
+
+    main > div#content section #title {
+        font-weight: 600;
+        font-size: 24px;
+        color: #FCF8F2;
+    }
+
+
+    main > div#content section #subtitle {
+        font-size: 16px;
+        color: #FCF8F2;
+    }
+
+    main > div#content section#local #container {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-column-gap: 16px;
+        justify-items: center;
+    }
+
+        main > div#content section#local #container > div {
+            margin: 10px;
+            min-width: 250px;
+            width: 250px;
+            height: 325px;
+            box-shadow: rgba(60, 74, 83, 0.3) 0px 0px 2px 0px, rgba(60, 74, 83, 0.3) 0px 2px 4px 0px;
+            border-radius: 6px;
+        }
+
+            main > div#content section#local #container > div > a > div.img {
+                width: 100%;
+                height: 140px;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            main > div#content section#local #container > div > a > div.content {
+                height: 110px;
+                padding: 20px;
+            }
+
+
+            main > div#content section#local #container > div div.cat {
+                text-transform: uppercase;
+                font-size: 14px;
+                line-height: 20px;
+                color: #C2B9AB;
+                margin-bottom: 10px;
+            }
+
+            main > div#content section#local #container > div div.title {
+                color: #FCF8F2;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 28px;
+            }
+
+            main > div#content section#local #container > div div.info {
+                padding: 0 20px;
+                color: #C2B9AB;
+                font-size: 14px;
+            }
+
+    main > div#content section#categories #container {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-column-gap: 16px;
+    }
+
+        main > div#content section#categories #container > div {
+            height: 208px;
+        }
+
+            main > div#content section#categories #container > div > a > div.img {
+                height: 160px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 6px;
+            }
+
+            main > div#content section#categories #container > div > a > div.title {
+                margin-top: 8px;
+                font-size: 16px;
+                color: #FCF8F2;
+            }
+
+main div#howtouse {
+    background: #202730;
+    height: 326px;
+}

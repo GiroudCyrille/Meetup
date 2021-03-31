@@ -1,0 +1,49 @@
+﻿@media screen and (max-width: 1100px) {
+    main > div#content > div.mw {
+        margin: 0 20px;
+    }
+
+    main > div#content section#categories #container,
+    main > div#content section#local #container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 880px) {
+    main > div#video {
+        background-image: url('https://www.meetup.com/mu_static/fr-FR/still_4.60184155.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+        main > div#video > video {
+            display: none;
+        }
+
+    main > div#content section#local #container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    main > div#content section#categories #container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main > div#content section#local #container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+        main > div#content section#local #container > div {
+            width: 90%;
+            margin: 5%;
+        }
+}
+
+@media screen and (max-width: 600px) {
+    header > div > ul#menu > li.sep {
+        display: none;
+    }
+}
